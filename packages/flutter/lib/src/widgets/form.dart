@@ -179,7 +179,7 @@ class FormState extends State<Form> {
   /// returns true if there are no errors.
   ///
   /// The form will rebuild to report the results.
-  bool validate() {
+  bool get validate {
     _hasInteractedByUser = true;
     _forceRebuild();
     return _validate();
